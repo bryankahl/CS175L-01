@@ -1,7 +1,7 @@
-COMMISSION_RATE = 0.03
-NUM_SHARES = 2000
-PURCHASE_PRICE = 40.0
-SELLING_PRICE = 42.75
+COMMISSION_RATE = float(input("What is the commission rate?: "))
+NUM_SHARES = float(input("What is the numuber of shares purchased?: "))
+PURCHASE_PRICE = float(input("What is the price per share?: "))
+SELLING_PRICE = float(input("WHat is the price the stock was sold at?: "))
 
 amountPaidForStock = NUM_SHARES * PURCHASE_PRICE
 
@@ -26,5 +26,3 @@ print(f'Amount the stock sold for: ${stockSoldFor:,.2f}')
 print(f'Sommission paid on the sale: ${sellingCommission:,.2f}')
 
 print(f'Profit (or loss if negative): ${profitOrLoss:,.2f}')
-
-
